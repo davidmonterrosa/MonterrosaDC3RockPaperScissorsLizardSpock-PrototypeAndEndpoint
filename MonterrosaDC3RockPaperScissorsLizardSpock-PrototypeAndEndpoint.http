@@ -1,0 +1,6 @@
+@MonterrosaDC3RockPaperScissorsLizardSpock_PrototypeAndEndpoint_HostAddress = http://localhost:5228
+
+GET {{MonterrosaDC3RockPaperScissorsLizardSpock_PrototypeAndEndpoint_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
