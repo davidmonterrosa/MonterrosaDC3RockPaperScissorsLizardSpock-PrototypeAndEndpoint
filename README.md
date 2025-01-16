@@ -15,5 +15,5 @@ You are to design a Rock, Paper, Scissors, Lizard, Spock game.
 + mm/dd/yyyy - DM - short description
 - 01/15/2025 - DM - Created git repository.
 
-Peer Reviewed By: 
-> Comments:
+Peer Reviewed By: Juan Heredia
+> Comments: The API works fine (maybe a little bit of Cors ?(question mark(?)))
