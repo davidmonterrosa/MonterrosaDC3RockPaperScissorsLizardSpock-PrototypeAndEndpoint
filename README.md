@@ -10,6 +10,7 @@ You are to design a Rock, Paper, Scissors, Lizard, Spock game.
 
 
 [Github Repository](https://github.com/davidmonterrosa/MonterrosaDC3RockPaperScissorsLizardSpock-PrototypeAndEndpoint.git)
+
 [Hosted API Via Azure](monterrosarpslsv1-aaapdudtatbdgtc0.westus-01.azurewebsites.net)
 
 ***Change Log***
