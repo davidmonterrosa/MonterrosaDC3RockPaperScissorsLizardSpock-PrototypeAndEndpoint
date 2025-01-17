@@ -12,30 +12,39 @@
 </head>
 
 <body>
-    <main class="game-play-area">
-        <h1 class="title">Rock Paper Scissors Lizard Spock</h1>
-        <button data-bs-target="#gameModeModal" data-bs-toggle="modal">New Game</button>
-        <button data-bs-target="#showRulesModal" data-bs-toggle="modal">Show Rules</button>
+    <main class="d-flex container-fluid flex-column vertical-center">
+        <div class="row justify-content-center ">
+            <h1 class="title col-5">Rock Paper Scissors Lizard Spock</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <button class="menu-btn" data-bs-target="#gameModeModal" data-bs-toggle="modal">New Game</button>
+            </div>
+            <div class="col-3">
+                <button class="menu-btn" data-bs-target="#showRulesModal" data-bs-toggle="modal">Show Rules</button>
+            </div>
+            
+        </div>
 
         <div class="modal fade" id="gameModeModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
             tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content modal-bg-muted-purple">
                     <div class="container modal-body">
                         <div class="row">
                             <div class="col">
-                                <button type="button" class="close-btn-style" data-bs-dismiss="modal" aria-label="Close"> X </button>
+                                <button type="button" class="nav-btn-style" data-bs-dismiss="modal" aria-label="Close"> X </button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <h1 class="modal-title" id="exampleModalToggleLabel">Game Mode</h1>
+                                <h1 class="modal-title text-center" id="exampleModalToggleLabel">Game Mode</h1>
                             </div>
                         </div>
                         <div class="row d-flex justify-content-center">
                             <div class="col-4">
-                                <button class="menu-btn" data-bs-target="#pvp-modal" data-bs-toggle="modal">Player vs Player</button>
-                                <button class="menu-btn" data-bs-target="#pvcpu-modal" data-bs-toggle="modal">Player vs Computer</button>
+                                <button id="playerVsPlayerBtn" class="menu-btn" data-bs-target="#pvp-modal" data-bs-toggle="modal">Player vs Player</button>
+                                <button id="playerVsComputerBtn" class="menu-btn" data-bs-target="#pvcpu-modal" data-bs-toggle="modal">Player vs Computer</button>
 
                             </div>
                         </div>
@@ -46,17 +55,17 @@
 
         <div class="modal fade" id="showRulesModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
             tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content modal-bg-muted-purple">
                     <div class="container modal-body">
                         <div class="row">
                             <div class="col">
-                                <button type="button" class="close-btn-style" data-bs-dismiss="modal" aria-label="Close"> X </button>
+                                <button type="button" class="nav-btn-style" data-bs-dismiss="modal" aria-label="Close"> X </button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <h1 class="modal-title" id="exampleModalToggleLabel">Game Mode</h1>
+                                <h1 class="modal-title text-center" id="exampleModalToggleLabel">Game Mode</h1>
                             </div>
                         </div>
                         <div class="row d-flex justify-content-center">
@@ -82,36 +91,56 @@
 
         <div class="modal fade" id="pvcpu-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
             tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Hide this modal and show the first with the button below.
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back
-                            to first</button>
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content modal-bg-muted-purple">
+                    <div class="container modal-body">
+                        <div class="row">
+                            <div class="col d-flex justify-content-between">
+                                <button type="button" class="nav-btn-style" data-bs-target="#gameModeModal" data-bs-toggle="modal"> &lt;&lt; </button>
+                                <button type="button" class="nav-btn-style" data-bs-dismiss="modal" aria-label="Close"> X </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="modal-title text-center" id="exampleModalToggleLabel">Match Length</h1>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-4">
+                                <button id="computerBestOf1Btn" class="menu-btn">Sudden Death</button>
+                                <button id="computerBestOf5Btn" class="menu-btn">Best of 5</button>
+                                <button id="computerBestOf7Btn" class="menu-btn">Best of 7</button>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="pvp-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
-            tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Hide this modal and show the first with the button below.
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back
-                            to first</button>
+
+        <div class="modal fade" id="pvp-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content modal-bg-muted-purple">
+                    <div class="container modal-body">
+                        <div class="row">
+                            <div class="col d-flex justify-content-between">
+                                <button type="button" class="nav-btn-style" data-bs-target="#gameModeModal" data-bs-toggle="modal"> &lt;&lt; </button>
+                                <button type="button" class="nav-btn-style" data-bs-dismiss="modal" aria-label="Close"> X </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="modal-title text-center" id="exampleModalToggleLabel">Match Length</h1>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-4">
+                                <button id="playerBestOf1Btn" class="menu-btn">Sudden Death</button>
+                                <button id="playerBestOf5Btn" class="menu-btn">Best of 5</button>
+                                <button id="playerBestOf7Btn" class="menu-btn">Best of 7</button>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

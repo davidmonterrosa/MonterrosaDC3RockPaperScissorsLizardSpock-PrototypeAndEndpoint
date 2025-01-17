@@ -27,11 +27,13 @@ h1 {
     font-size: 3.75rem;
 }
 
-.game-play-area {
-    display: grid;
+.vertical-center {
+    /* display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr); */
+    margin-top: calc(0.32 * 100vh);
 }
+
 .title {
     text-align: center;
     grid-row: 3 / span 4;
@@ -48,7 +50,7 @@ h1 {
     color: white;
 }
 
-.close-btn-style {
+.nav-btn-style {
     font-family: "Audiowide", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--ruddy-pink);
     background-color: transparent;
@@ -60,7 +62,7 @@ h1 {
     width: 100%;
     height: 135px;
     border: none;
-    border-radius: 1;
+    border-radius: 15px;
     background-color: white;
     opacity: 0.75;
 }
