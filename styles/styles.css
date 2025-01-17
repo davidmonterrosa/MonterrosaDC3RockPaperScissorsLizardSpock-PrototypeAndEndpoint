@@ -1,0 +1,73 @@
+:root{
+    --muted-purple: #3E3E6B;
+    --ruddy-pink: #E58C8E;
+}
+
+@font-face {
+    font-family: "Audiowide";
+    src: url(../assets/fonts/Audiowide/Audiowide-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Open_Sans";
+    src: url(../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+
+body {
+    background-image: url(../assets/BlankBackground.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: "Audiowide", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3.75rem;
+}
+
+.game-play-area {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+.title {
+    text-align: center;
+    grid-row: 3 / span 4;
+    grid-column: 3 / span 6;
+}
+
+.modal-style {
+    width: 60%;
+    height: 80%;
+}
+
+.modal-bg-muted-purple {
+    background-color: var(--muted-purple);
+    color: white;
+}
+
+.close-btn-style {
+    font-family: "Audiowide", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--ruddy-pink);
+    background-color: transparent;
+    border: none;
+}
+
+.menu-btn {
+    font-family: "Audiowide", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    height: 135px;
+    border: none;
+    border-radius: 1;
+    background-color: white;
+    opacity: 0.75;
+}
+
+.menu-btn:hover {
+    cursor: pointer;
+    border: 1px solid black ;
+    background-color: white;
+    opacity: 1;
+}
